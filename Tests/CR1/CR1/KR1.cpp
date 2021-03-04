@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
     void ABC(int);
+    void NSK(int, int);
     //2.....................................................................................................................
     //  Input : n = 4
     //  Output: A
@@ -13,19 +14,19 @@ using namespace std;
         D D D D*/
     int main()
     {
-        int n;
+       /* int n;
         cout << "Enter n:";
         cin >> n;
         ABC(n);
-        return 0;
+        return 0;*/
         //1.......................................................................................................................
         // input 10 and 6
         // output 30
-       /* int a, b;
-        cout << "Enter a,b: ";
+        int a, b;
+        cout << "enter a,b: ";
         cin >> a >> b;
         NSK(a, b);
-        return 0;*/
+        return 0;
     }
 
     void NSK(int a, int b)
