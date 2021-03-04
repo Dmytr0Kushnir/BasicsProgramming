@@ -20,24 +20,45 @@ using namespace std;
         return 0;
         //1.......................................................................................................................
         // input 10 and 6
-    // output 30
-       /* int a, b, c, aa, bb;
+        // output 30
+       /* int a, b;
+        cout << "Enter a,b: ";
         cin >> a >> b;
-        aa = a;
-        bb = b;
-        if (a < b) {
-            a = a ^ b;
-            b = a ^ b;
-            a = a ^ b;
-        }
-        while (b) {
-            c = a;
-            a = b;
-            b = c % b;
-        }
-        b = (aa * bb) / a;
-        cout << b;
+        NSK(a, b);
         return 0;*/
+    }
+
+    void NSK(int a, int b)
+    {
+        int na = a, nb = b;
+        bool flag = false;
+        if (a > b)
+        {
+            while (a != b)
+            {
+                while (b <= a)
+                {
+                    if (a == b) { cout << a; flag = true; break; }
+                    else b += nb;
+                }
+                if (flag == true) break;
+                a += na;
+            }
+        }
+        else if (a < b)
+        {
+            while (b != a)
+            {
+                while (a <= b)
+                {
+                    if (b == a) { cout << b; flag = true; break; }
+                    else a += na;
+                }
+                if (flag == true) break;
+                b += nb;
+            }
+        }
+        else cout << a;
     }
 
     void ABC(int n)
